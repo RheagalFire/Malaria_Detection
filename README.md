@@ -4,7 +4,7 @@ Using Transfer Learning(using VGG architecture) for Malaria Detection
 ## Website Overview
 ![img](https://github.com/RheagalFire/Malaria_Detection/blob/master/Results/Infected.JPG)
 
-## How to run this Locally
+## How to Run this Locally
 - To do this you need to deploy the model as an api endpoint on google cloud. (**SEE BELOW**)
 - Then go to Service Accounts(under IAM & Admin) on your g-console and create service(**with Roles:ML Engineer and Security Admin**).
 - Then create a key and download that key as a `.json` file.
@@ -27,7 +27,7 @@ Using Transfer Learning(using VGG architecture) for Malaria Detection
 
 After following all these steps you will be able to run this app locally. You can also run this app without deploying model as an api,jus tweak the code in app.py a little bit.
 
-## To deploy this Project on Cloud Services
+## To Deploy this Project on Cloud Services
 - Use Docker Containers to deploy this Project on any cloud service 
 - For Heroku see [instructions](https://devcenter.heroku.com/categories/deploying-with-docker) for deploying with dockerimage with container_registery.
 - Same goes for the google cloud platform.(Easy 10 min process is deploying through **Cloud Run**).
