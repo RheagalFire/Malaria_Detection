@@ -1,4 +1,4 @@
-## Malaria Detection
+# Malaria Detection
 Using Transfer Learning(using VGG architecture) for Malaria Detection
 
 ## Website Overview
