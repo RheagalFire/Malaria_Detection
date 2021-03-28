@@ -26,3 +26,12 @@ Using Transfer Learning(using VGG architecture) for Malaria Detection
 - Your model would be deployed as an api-endpoint within few mintutes.
 
 After following all these steps you will be able to run this app locally. You can also run this app without deploying model as an api,jus tweak the code in app.py a little bit.
+
+## To deploy this Project on Cloud Services
+- Use Docker Containers to deploy this Project on any cloud service 
+- For Heroku see [instructions](https://devcenter.heroku.com/categories/deploying-with-docker) for deploying with dockerimage with container_registery.
+- Same goes for the google cloud platform.(Easy 10 min process is deploying through **Cloud Run**).
+
+## Cautions
+- While making model as an api point , you get a **secret json file** with you g_authentication credentials don't push it anywhere publicaly.
+- While deploying this webapp don't push this **dockerfile image**(as it contains your `g_aut_secrets.json`) to DockerHub. 
