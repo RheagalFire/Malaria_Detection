@@ -10,7 +10,7 @@ import numpy as np
 #import cv2
 #from google.oauth2 import service_account
 from google.api_core.client_options import ClientOptions
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="api-mal-d-c177a21be632.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="name_of_your_json_file"
 #credentials = service_account.Credentials.from_service_account_file('client_secrets.json')
 PROJECT="api-mal-d"
 REGION="us-central1"
