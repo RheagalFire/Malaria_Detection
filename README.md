@@ -14,3 +14,15 @@ Using Transfer Learning(using VGG architecture) for Malaria Detection
 
 ## Deploying model as api-endpoint using google's AI-Platform service
 - Either download the folder `model_vgg_v3` or create your own following the instructions of [.ipynb notebook](https://github.com/RheagalFire/Malaria_Detection/blob/master/Malaria_Detection.ipynb)
+- Then go and signup for gcloud(and activate billing with free 300 dollars credit).
+- Go to `Storage` under navigation pannel and create a bucket and choose `Upload Folder` and upload the `model_vgg_v3` file.
+- Then Under the navigation pannel go to `AI-PLATFORM` and go to `models` and `create new model`. Create it with default settings.
+- Click on the model created and then click on `create new version`.
+- Select `pre-built container`
+- For the model_URL click browse and select your `model_vgg_3` folder.
+- Select `Python_Version==3.7`,`Tensorflow==2.3.1` and latest `ML_Runtime_version`.
+- Select your preferred machine type.(Ideally **No gpu and 7.5gb Standard cpu**)
+- Click on save. 
+- Your model would be deployed as an api-endpoint within few mintutes.
+
+After following all these steps you will be able to run this app locally. You can also run this app without deploying model as an api,jus tweak the code in app.py a little bit.
